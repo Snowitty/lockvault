@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2240ABA82BDF915D00F31ACA /* lockvaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABA72BDF915D00F31ACA /* lockvaultApp.swift */; };
+		2240ABAA2BDF915D00F31ACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABA92BDF915D00F31ACA /* ContentView.swift */; };
+		2240ABAC2BDF915E00F31ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2240ABAB2BDF915E00F31ACA /* Assets.xcassets */; };
+		2240ABAF2BDF915E00F31ACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2240ABAE2BDF915E00F31ACA /* Preview Assets.xcassets */; };
+		2240ABB12BDF915E00F31ACA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABB02BDF915E00F31ACA /* Persistence.swift */; };
+		2240ABB42BDF915E00F31ACA /* lockvault.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABB22BDF915E00F31ACA /* lockvault.xcdatamodeld */; };
+		2240ABBF2BDF915F00F31ACA /* lockvaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABBE2BDF915F00F31ACA /* lockvaultTests.swift */; };
+		2240ABC92BDF915F00F31ACA /* lockvaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABC82BDF915F00F31ACA /* lockvaultUITests.swift */; };
+		2240ABCB2BDF915F00F31ACA /* lockvaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2240ABCA2BDF915F00F31ACA /* lockvaultUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2240ABBB2BDF915F00F31ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2240AB9C2BDF915D00F31ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2240ABA32BDF915D00F31ACA;
+			remoteInfo = lockvault;
+		};
+		2240ABC52BDF915F00F31ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2240AB9C2BDF915D00F31ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2240ABA32BDF915D00F31ACA;
+			remoteInfo = lockvault;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2240ABA42BDF915D00F31ACA /* lockvault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lockvault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2240ABA72BDF915D00F31ACA /* lockvaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockvaultApp.swift; sourceTree = "<group>"; };
+		2240ABA92BDF915D00F31ACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2240ABAB2BDF915E00F31ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2240ABAE2BDF915E00F31ACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2240ABB02BDF915E00F31ACA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		2240ABB32BDF915E00F31ACA /* lockvault.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lockvault.xcdatamodel; sourceTree = "<group>"; };
+		2240ABB52BDF915E00F31ACA /* lockvault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lockvault.entitlements; sourceTree = "<group>"; };
+		2240ABBA2BDF915F00F31ACA /* lockvaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lockvaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2240ABBE2BDF915F00F31ACA /* lockvaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockvaultTests.swift; sourceTree = "<group>"; };
+		2240ABC42BDF915F00F31ACA /* lockvaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lockvaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2240ABC82BDF915F00F31ACA /* lockvaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockvaultUITests.swift; sourceTree = "<group>"; };
+		2240ABCA2BDF915F00F31ACA /* lockvaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lockvaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2240ABA12BDF915D00F31ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2240ABB72BDF915F00F31ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2240ABC12BDF915F00F31ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2240AB9B2BDF915D00F31ACA = {
+			isa = PBXGroup;
+			children = (
+				2240ABA62BDF915D00F31ACA /* lockvault */,
+				2240ABBD2BDF915F00F31ACA /* lockvaultTests */,
+				2240ABC72BDF915F00F31ACA /* lockvaultUITests */,
+				2240ABA52BDF915D00F31ACA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2240ABA52BDF915D00F31ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2240ABA42BDF915D00F31ACA /* lockvault.app */,
+				2240ABBA2BDF915F00F31ACA /* lockvaultTests.xctest */,
+				2240ABC42BDF915F00F31ACA /* lockvaultUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2240ABA62BDF915D00F31ACA /* lockvault */ = {
+			isa = PBXGroup;
+			children = (
+				2240ABA72BDF915D00F31ACA /* lockvaultApp.swift */,
+				2240ABA92BDF915D00F31ACA /* ContentView.swift */,
+				2240ABAB2BDF915E00F31ACA /* Assets.xcassets */,
+				2240ABB02BDF915E00F31ACA /* Persistence.swift */,
+				2240ABB52BDF915E00F31ACA /* lockvault.entitlements */,
+				2240ABB22BDF915E00F31ACA /* lockvault.xcdatamodeld */,
+				2240ABAD2BDF915E00F31ACA /* Preview Content */,
+			);
+			path = lockvault;
+			sourceTree = "<group>";
+		};
+		2240ABAD2BDF915E00F31ACA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2240ABAE2BDF915E00F31ACA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2240ABBD2BDF915F00F31ACA /* lockvaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				2240ABBE2BDF915F00F31ACA /* lockvaultTests.swift */,
+			);
+			path = lockvaultTests;
+			sourceTree = "<group>";
+		};
+		2240ABC72BDF915F00F31ACA /* lockvaultUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2240ABC82BDF915F00F31ACA /* lockvaultUITests.swift */,
+				2240ABCA2BDF915F00F31ACA /* lockvaultUITestsLaunchTests.swift */,
+			);
+			path = lockvaultUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2240ABA32BDF915D00F31ACA /* lockvault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2240ABCE2BDF915F00F31ACA /* Build configuration list for PBXNativeTarget "lockvault" */;
+			buildPhases = (
+				2240ABA02BDF915D00F31ACA /* Sources */,
+				2240ABA12BDF915D00F31ACA /* Frameworks */,
+				2240ABA22BDF915D00F31ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lockvault;
+			productName = lockvault;
+			productReference = 2240ABA42BDF915D00F31ACA /* lockvault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2240ABB92BDF915F00F31ACA /* lockvaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2240ABD12BDF915F00F31ACA /* Build configuration list for PBXNativeTarget "lockvaultTests" */;
+			buildPhases = (
+				2240ABB62BDF915F00F31ACA /* Sources */,
+				2240ABB72BDF915F00F31ACA /* Frameworks */,
+				2240ABB82BDF915F00F31ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2240ABBC2BDF915F00F31ACA /* PBXTargetDependency */,
+			);
+			name = lockvaultTests;
+			productName = lockvaultTests;
+			productReference = 2240ABBA2BDF915F00F31ACA /* lockvaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2240ABC32BDF915F00F31ACA /* lockvaultUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2240ABD42BDF915F00F31ACA /* Build configuration list for PBXNativeTarget "lockvaultUITests" */;
+			buildPhases = (
+				2240ABC02BDF915F00F31ACA /* Sources */,
+				2240ABC12BDF915F00F31ACA /* Frameworks */,
+				2240ABC22BDF915F00F31ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2240ABC62BDF915F00F31ACA /* PBXTargetDependency */,
+			);
+			name = lockvaultUITests;
+			productName = lockvaultUITests;
+			productReference = 2240ABC42BDF915F00F31ACA /* lockvaultUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2240AB9C2BDF915D00F31ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					2240ABA32BDF915D00F31ACA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					2240ABB92BDF915F00F31ACA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 2240ABA32BDF915D00F31ACA;
+					};
+					2240ABC32BDF915F00F31ACA = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 2240ABA32BDF915D00F31ACA;
+					};
+				};
+			};
+			buildConfigurationList = 2240AB9F2BDF915D00F31ACA /* Build configuration list for PBXProject "lockvault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2240AB9B2BDF915D00F31ACA;
+			productRefGroup = 2240ABA52BDF915D00F31ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2240ABA32BDF915D00F31ACA /* lockvault */,
+				2240ABB92BDF915F00F31ACA /* lockvaultTests */,
+				2240ABC32BDF915F00F31ACA /* lockvaultUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2240ABA22BDF915D00F31ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240ABAF2BDF915E00F31ACA /* Preview Assets.xcassets in Resources */,
+				2240ABAC2BDF915E00F31ACA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2240ABB82BDF915F00F31ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2240ABC22BDF915F00F31ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2240ABA02BDF915D00F31ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240ABB12BDF915E00F31ACA /* Persistence.swift in Sources */,
+				2240ABAA2BDF915D00F31ACA /* ContentView.swift in Sources */,
+				2240ABA82BDF915D00F31ACA /* lockvaultApp.swift in Sources */,
+				2240ABB42BDF915E00F31ACA /* lockvault.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2240ABB62BDF915F00F31ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240ABBF2BDF915F00F31ACA /* lockvaultTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2240ABC02BDF915F00F31ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240ABCB2BDF915F00F31ACA /* lockvaultUITestsLaunchTests.swift in Sources */,
+				2240ABC92BDF915F00F31ACA /* lockvaultUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2240ABBC2BDF915F00F31ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2240ABA32BDF915D00F31ACA /* lockvault */;
+			targetProxy = 2240ABBB2BDF915F00F31ACA /* PBXContainerItemProxy */;
+		};
+		2240ABC62BDF915F00F31ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2240ABA32BDF915D00F31ACA /* lockvault */;
+			targetProxy = 2240ABC52BDF915F00F31ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2240ABCC2BDF915F00F31ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2240ABCD2BDF915F00F31ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		2240ABCF2BDF915F00F31ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = lockvault/lockvault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lockvault/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowitty.lockvault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2240ABD02BDF915F00F31ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = lockvault/lockvault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lockvault/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowitty.lockvault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2240ABD22BDF915F00F31ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowitty.lockvaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lockvault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lockvault";
+			};
+			name = Debug;
+		};
+		2240ABD32BDF915F00F31ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowitty.lockvaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lockvault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lockvault";
+			};
+			name = Release;
+		};
+		2240ABD52BDF915F00F31ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowitty.lockvaultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = lockvault;
+			};
+			name = Debug;
+		};
+		2240ABD62BDF915F00F31ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowitty.lockvaultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = lockvault;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2240AB9F2BDF915D00F31ACA /* Build configuration list for PBXProject "lockvault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2240ABCC2BDF915F00F31ACA /* Debug */,
+				2240ABCD2BDF915F00F31ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2240ABCE2BDF915F00F31ACA /* Build configuration list for PBXNativeTarget "lockvault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2240ABCF2BDF915F00F31ACA /* Debug */,
+				2240ABD02BDF915F00F31ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2240ABD12BDF915F00F31ACA /* Build configuration list for PBXNativeTarget "lockvaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2240ABD22BDF915F00F31ACA /* Debug */,
+				2240ABD32BDF915F00F31ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2240ABD42BDF915F00F31ACA /* Build configuration list for PBXNativeTarget "lockvaultUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2240ABD52BDF915F00F31ACA /* Debug */,
+				2240ABD62BDF915F00F31ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2240ABB22BDF915E00F31ACA /* lockvault.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2240ABB32BDF915E00F31ACA /* lockvault.xcdatamodel */,
+			);
+			currentVersion = 2240ABB32BDF915E00F31ACA /* lockvault.xcdatamodel */;
+			path = lockvault.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2240AB9C2BDF915D00F31ACA /* Project object */;
+}
